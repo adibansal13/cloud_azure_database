@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>College Task Manager</h2>
+
+<form action="/add" method="POST">
+  <input name="title" placeholder="Task">
+  <input name="subject" placeholder="Subject">
+  <button>Add</button>
+</form>
+
+<ul>
+<% tasks.forEach(t => { %>
+  <li><%= t.title %> - <%= t.subject %></li>
+<% }) %>
+</ul>
+</body>
+</html>
